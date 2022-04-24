@@ -5,7 +5,7 @@ Bash script that retrieves Latest Mirror List Using Reflector In Arch Linux
 ## Inspiration
 This script is based on the contents of the following blog post:
 
-Retrieve Latest Mirror List Using Reflector In Arch Linux, Written by Sk, Published: June 10, 2021. [(Website)](https://ostechnix.com/retrieve-latest-mirror-list-using-reflector-arch-linux/)
+Retrieve Latest Mirror List Using Reflector In Arch Linux, Written by Sk, Published: June 10, 2021. [(Link to blog post)](https://ostechnix.com/retrieve-latest-mirror-list-using-reflector-arch-linux/)
 
 
 ## Prerequisites
