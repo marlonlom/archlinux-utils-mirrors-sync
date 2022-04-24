@@ -10,6 +10,7 @@ Retrieve Latest Mirror List Using Reflector In Arch Linux, Written by Sk, Publis
 
 ## Prerequisites
 
+* Have an active Internet connection
 * Operative Systems: Linux (Arch linux, exactly)
 * Packages (from archlinux wiki):
   - reflector (https://wiki.archlinux.org/title/Reflector)
@@ -39,12 +40,33 @@ rsync -avh .config/marlonlom/ ~/.config/marlonlom/
 ```
 # Adds execution privilege the current owner user of the specified file
 cd ~/.config/marlonlom/archlinux/utils
-chmod -x sync-current-mirrors.sh
+chmod +x sync-current-mirrors.sh
 
 # or
-chmod -x ~/.config/marlonlom/archlinux/utils/sync-current-mirrors.sh
+chmod +x ~/.config/marlonlom/archlinux/utils/sync-current-mirrors.sh
 
 ```
+
+(5) For easy usage opf the script, its recommended to make alias and using it for running the script file inside the terminal.
+
+(5.1) Editing *.bashrc* file
+
+Open .bashrc file for editing - in this example, im using nano, but feel free to use another text editor-
+```
+sudo nano ~/.bashrc
+```
+
+Add this at the bottom of .bashrc file
+```
+# Sync current mirrors
+alias sync-current-mirrors="clear && sudo ~/.config/marlonlom/archlinux/utils/sync-current-mirrors.sh"
+```
+
+Read and execute updated .bashrc file
+```
+source ~/.bashrc
+```
+
 
 # License
 ```
