@@ -92,7 +92,7 @@ Add this at the bottom of .zshrc file
 alias sync-current-mirrors="clear && sudo ~/.config/marlonlom/archlinux/utils/sync-current-mirrors.sh"
 ```
 
-Read and execute updated .szhrc file
+Read and execute updated .zshrc file
 ```
 source ~/.zshrc
 ```
