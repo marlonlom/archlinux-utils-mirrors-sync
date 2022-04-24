@@ -18,12 +18,13 @@ Retrieve Latest Mirror List Using Reflector In Arch Linux, Written by Sk, Publis
   - curl (https://wiki.archlinux.org/title/curl)
 
 
-## Usage
-(1) Download / Clone the repository using Git.
+## Preparation
 
-(2) Navigate to the downloaded repository root folder.
+A. Download / Clone the repository using Git.
 
-(3) Copy the .config/marlonlom folder and put that into the .config/marlonlom folder of the home directory.
+B. Navigate to the downloaded repository root folder.
+
+C. Copy the .config/marlonlom folder and put that into the .config/marlonlom folder of the home directory.
 _Note_: In case dont exists the .config directory, you must create it.
 
 ```
@@ -32,10 +33,9 @@ cp -R .config/marlonlom ~/.config/marlonlom
 
 (using rsync -pls check if rsync is installed first before using this-)
 rsync -avh .config/marlonlom/ ~/.config/marlonlom/
-
 ```
 
-(4) navigate to _~/.config/marlonlom/archlinux/utils_ folder and set execution permissions to _sync-current-mirrors.sh_ file. 
+D. navigate to _~/.config/marlonlom/archlinux/utils_ folder and set execution permissions to _sync-current-mirrors.sh_ file. 
 
 ```
 # Adds execution privilege the current owner user of the specified file
@@ -44,12 +44,11 @@ chmod +x sync-current-mirrors.sh
 
 # or
 chmod +x ~/.config/marlonlom/archlinux/utils/sync-current-mirrors.sh
-
 ```
 
-(5) For easy usage opf the script, its recommended to make alias and using it for running the script file inside the terminal.
+E. For easy usage opf the script, its recommended to make alias and using it for running the script file inside the terminal.
 
-(5.1) Editing *.bashrc* file
+E1. Editing *.bashrc* file
 
 Open .bashrc file for editing - in this example, im using nano, but feel free to use another text editor-
 ```
@@ -65,6 +64,13 @@ alias sync-current-mirrors="clear && sudo ~/.config/marlonlom/archlinux/utils/sy
 Read and execute updated .bashrc file
 ```
 source ~/.bashrc
+```
+
+## Usage
+After preparing the script for its usage, in the terminal, invoke the script by typing the following:
+
+```
+$ sync-current-mirrors
 ```
 
 
