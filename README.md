@@ -22,14 +22,29 @@ Retrieve Latest Mirror List Using Reflector In Arch Linux, Written by Sk, Publis
 
 (2) Navigate to the downloaded repository root folder.
 
-(3) Copy the .config folder and put that into the .config folder of the home directory.
+(3) Copy the .config/marlonlom folder and put that into the .config/marlonlom folder of the home directory.
 _Note_: In case dont exists the .config directory, you must create it.
 
-```bash
+```
 (inside root folder of the repository once downloaded)
-cp .config/marlonlom/archlinux/utils/sync-current-mirrors.sh ~/.config
+cp -R .config/marlonlom ~/.config/marlonlom
+
+(using rsync -pls check if rsync is installed first before using this-)
+rsync -avh .config/marlonlom/ ~/.config/marlonlom/
+
 ```
 
+(4) navigate to _~/.config/marlonlom/archlinux/utils_ folder and set execution permissions to _sync-current-mirrors.sh_ file. 
+
+```
+# Adds execution privilege the current owner user of the specified file
+cd ~/.config/marlonlom/archlinux/utils
+chmod -x sync-current-mirrors.sh
+
+# or
+chmod -x ~/.config/marlonlom/archlinux/utils/sync-current-mirrors.sh
+
+```
 
 # License
 ```
