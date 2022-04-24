@@ -1,18 +1,35 @@
 # archlinux-utils-mirrors-sync
 Bash script that retrieves Latest Mirror List Using Reflector In Arch Linux
 
+
 ## Inspiration
 This script is based on the contents of the following blog post:
 
-[Retrieve Latest Mirror List Using Reflector In Arch Linux Written by Sk](https://ostechnix.com/retrieve-latest-mirror-list-using-reflector-arch-linux/)
+Retrieve Latest Mirror List Using Reflector In Arch Linux, Written by Sk, Published: June 10, 2021. [(Website)](https://ostechnix.com/retrieve-latest-mirror-list-using-reflector-arch-linux/)
+
+
+## Prerequisites
+
+* Operative Systems: Linux (Arch linux, exactly)
+* Packages (from archlinux wiki):
+  - reflector (https://wiki.archlinux.org/title/Reflector)
+  - rsync (https://wiki.archlinux.org/title/rsync)
+  - curl (https://wiki.archlinux.org/title/curl)
 
 
 ## Usage
-Download the repository, then, copy the .config folder and put that into the home directory.
+(1) Download / Clone the repository using Git.
+
+(2) Navigate to the downloaded repository root folder.
+
+(3) Copy the .config folder and put that into the .config folder of the home directory.
+_Note_: In case dont exists the .config directory, you must create it.
 
 ```bash
-cp ./.config/marlonlom/archlinux/utils/sync-current-mirrors.sh ~/.config
+(inside root folder of the repository once downloaded)
+cp .config/marlonlom/archlinux/utils/sync-current-mirrors.sh ~/.config
 ```
+
 
 # License
 ```
