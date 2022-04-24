@@ -1,5 +1,17 @@
-# archlinux-utils-mirrors-sync
+# Current mirrors syncing utility for archLinux
 Bash script that retrieves Latest Mirror List Using Reflector In Arch Linux
+
+---
+## Table of contents
+
+- [Inspiration](#inspiration)
+- [Prerequisites](#prerequisites)
+- [Preparation](#preparation)
+- [Usage](#usage)
+- [License](#license)
+
+
+---
 
 
 ## Inspiration
@@ -69,7 +81,7 @@ source ~/.bashrc
 ```
 
 #### Editing *.zshrc* file
-Open .szhrc file for editing - in this example, im using nano, but feel free to use another text editor-
+Open .zshrc file for editing - in this example, im using nano, but feel free to use another text editor-
 ```
 sudo nano ~/.zshrc
 ```
