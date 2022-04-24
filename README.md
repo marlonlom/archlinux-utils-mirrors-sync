@@ -19,12 +19,13 @@ Retrieve Latest Mirror List Using Reflector In Arch Linux, Written by Sk, Publis
 
 
 ## Preparation
+For preparing the script for usage, follow the steps:
 
-A. Download / Clone the repository using Git.
+A) Download / Clone the repository using Git.
 
-B. Navigate to the downloaded repository root folder.
+B) Navigate to the downloaded repository root folder.
 
-C. Copy the .config/marlonlom folder and put that into the .config/marlonlom folder of the home directory.
+C) Copy the .config/marlonlom folder and put that into the .config/marlonlom folder of the home directory.
 _Note_: In case dont exists the .config directory, you must create it.
 
 ```
@@ -35,7 +36,7 @@ cp -R .config/marlonlom ~/.config/marlonlom
 rsync -avh .config/marlonlom/ ~/.config/marlonlom/
 ```
 
-D. navigate to _~/.config/marlonlom/archlinux/utils_ folder and set execution permissions to _sync-current-mirrors.sh_ file. 
+D) navigate to _~/.config/marlonlom/archlinux/utils_ folder and set execution permissions to _sync-current-mirrors.sh_ file. 
 
 ```
 # Adds execution privilege the current owner user of the specified file
@@ -46,10 +47,11 @@ chmod +x sync-current-mirrors.sh
 chmod +x ~/.config/marlonlom/archlinux/utils/sync-current-mirrors.sh
 ```
 
-E. For easy usage opf the script, its recommended to make alias and using it for running the script file inside the terminal.
+### Preparing script alias for better execution
+For easy usage of the script, its recommended to make alias and using it for running the script file inside the terminal.
 
-E1. Editing *.bashrc* file
 
+#### Editing *.bashrc* file
 Open .bashrc file for editing - in this example, im using nano, but feel free to use another text editor-
 ```
 sudo nano ~/.bashrc
@@ -65,6 +67,24 @@ Read and execute updated .bashrc file
 ```
 source ~/.bashrc
 ```
+
+#### Editing *.zshrc* file
+Open .szhrc file for editing - in this example, im using nano, but feel free to use another text editor-
+```
+sudo nano ~/.zshrc
+```
+
+Add this at the bottom of .zshrc file
+```
+# Sync current mirrors
+alias sync-current-mirrors="clear && sudo ~/.config/marlonlom/archlinux/utils/sync-current-mirrors.sh"
+```
+
+Read and execute updated .szhrc file
+```
+source ~/.zshrc
+```
+
 
 ## Usage
 After preparing the script for its usage, in the terminal, invoke the script by typing the following:
