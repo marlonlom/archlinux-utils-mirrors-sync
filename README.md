@@ -1,5 +1,5 @@
-# Current mirrors syncing utility for archLinux
-Bash script that retrieves Latest Mirror List Using Reflector In Arch Linux
+# Current mirrors syncing utility for Arch Linux
+Bash script that retrieves latest mirror list using reflector in Arch Linux
 
 ---
 ## Table of contents
